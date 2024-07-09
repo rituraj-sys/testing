@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to PayU</title>
+</head>
+<body onload="document.forms['payu_form'].submit()">
+    <h1>Redirecting to PayU...</h1>
+    <form action="https://secure.payu.in/_payment" method="post" name="payu_form">
+        <input type="hidden" name="key" value="kPFnBJ">
+        <input type="hidden" name="txnid" value="a662abe7-efb0-4af9-b9c4-1f58f1a0e128">
+        <input type="hidden" name="amount" value="1.00">
+        <input type="hidden" name="productinfo" value="Test Product">
+        <input type="hidden" name="firstname" value="John">
+        <input type="hidden" name="email" value="john.doe@example.com">
+        <input type="hidden" name="phone" value="9999999999">
+        <input type="hidden" name="surl" value="http://127.0.0.1:5000/succ">
+        <input type="hidden" name="furl" value="http://127.0.0.1:5000/fail">
+        <input type="hidden" name="hash" value="c2bc330613a17b4ac084d290f9270424e2479f9d3af050941dbbad0afe56fd70c30595fbf361cf130fa8f5b9bc3d58a7fcef51c7e25d919081d2ba0be52bae29">
+        <input type="hidden" name="service_provider" value="payu_paisa">
+    </form>
+</body>
+</html>
